@@ -1,0 +1,14 @@
+연습문제
+2.
+
+a={"name": "park", "score": 70}
+b={"name": "kim", "score": 80}
+c={"name": "park", "score": 50}
+
+누구는 점수가 80점 이상이 true, false
+
+3. kim은 50000원이 있고, park은 30000원이 있다. 둘의 차이는? (dictionary 사용)
+
+누구는 누구보다 얼마 있습니다.
+
+누구는 누구랑 합 얼마 있습니다

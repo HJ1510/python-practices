@@ -1,0 +1,31 @@
+print("Q1. ")
+a=[11,21,31,1,1,2,3,4,2,1,4,5,6,7,8,10]
+setA=set(a)
+a=list(setA)
+print(a)
+
+
+print("Q2. ")
+
+a={"name": "park", "score": 70}
+b={"name": "kim", "score": 80}
+c={"name": "park", "score": 50}
+
+print("%s는 점수가 80점 이상이 %s"%(a.get("name"),a["score"]>=80))
+print("%s는 점수가 80점 이상이 %s"%(b.get("name"),b["score"]>=80))
+print("%s는 점수가 80점 이상이 %s"%(c.get("name"),c["score"]>=80))
+
+print("Q3. ")
+
+person={'name': "kim", 'money': 50000}
+person1={'name': "park", 'money': 30000}
+
+print("%s는 %s보다 %d있습니다."%(person.get("name"),person1.get("name"),person.get("money")-person1.get("money")))
+print("%s는 %s보다 %d있습니다."%(person1.get("name"),person.get("name"),person1.get("money")-person.get("money")))
+print("%s이랑 %s랑 합 %d있습니다."%(person.get("name"),%person1.get("name"),%(person.get("money")+person1.get("money"))))
+print("둘의 평균은 %.0f입니다."%((person.get("money")+person1.get("money"))/2))
+print("안녕하세요")
+
+
+# 주석 ctrl+/
+

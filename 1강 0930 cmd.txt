@@ -1,0 +1,1093 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\BIT>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+C:\Users\BIT>python -V
+Python 3.10.7
+
+C:\Users\BIT>cd /
+
+C:\>mkdir test
+
+C:\>cd test
+
+C:\test>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("")
+
+>>> print("bit")
+bit
+>>> print("yoon hyunjeong")
+yoon hyunjeong
+>>> print(yoon hyunjeong)
+  File "<stdin>", line 1
+    print(yoon hyunjeong)
+          ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(1)
+1
+>>> print(1+1)
+2
+>>> print(1*1)
+1
+>>> print(4/2)
+2.0
+>>> print(87549412/4654)
+18811.648474430596
+>>> print("1-1=0")
+1-1=0
+>>> print("1-1="+(1-1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print("1-1=")
+1-1=
+>>> exit()
+
+C:\test>python -V
+Python 3.10.7
+
+C:\test>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Python 3.10.7")
+Python 3.10.7
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+C:\test>python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options and arguments (and corresponding environment variables):
+-b     : issue warnings about str(bytes_instance), str(bytearray_instance)
+         and comparing bytes/bytearray with str. (-bb: issue errors)
+-B     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
+-c cmd : program passed in as string (terminates option list)
+-d     : turn on parser debugging output (for experts only, only works on
+         debug builds); also PYTHONDEBUG=x
+-E     : ignore PYTHON* environment variables (such as PYTHONPATH)
+-h     : print this help message and exit (also -? or --help)
+-i     : inspect interactively after running script; forces a prompt even
+         if stdin does not appear to be a terminal; also PYTHONINSPECT=x
+-I     : isolate Python from the user's environment (implies -E and -s)
+-m mod : run library module as a script (terminates option list)
+-O     : remove assert and __debug__-dependent statements; add .opt-1 before
+         .pyc extension; also PYTHONOPTIMIZE=x
+-OO    : do -O changes and also discard docstrings; add .opt-2 before
+         .pyc extension
+-q     : don't print version and copyright messages on interactive startup
+-s     : don't add user site directory to sys.path; also PYTHONNOUSERSITE
+-S     : don't imply 'import site' on initialization
+-u     : force the stdout and stderr streams to be unbuffered;
+         this option has no effect on stdin; also PYTHONUNBUFFERED=x
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+-V     : print the Python version number and exit (also --version)
+         when given twice, print more information about the build
+-W arg : warning control; arg is action:message:category:module:lineno
+         also PYTHONWARNINGS=arg
+-x     : skip first line of source, allowing use of non-Unix forms of #!cmd
+-X opt : set implementation-specific option. The following options are available:
+         -X faulthandler: enable faulthandler
+         -X showrefcount: output the total reference count and number of used
+             memory blocks when the program finishes or after each statement in the
+             interactive interpreter. This only works on debug builds
+         -X tracemalloc: start tracing Python memory allocations using the
+             tracemalloc module. By default, only the most recent frame is stored in a
+             traceback of a trace. Use -X tracemalloc=NFRAME to start tracing with a
+             traceback limit of NFRAME frames
+         -X importtime: show how long each import takes. It shows module name,
+             cumulative time (including nested imports) and self time (excluding
+             nested imports). Note that its output may be broken in multi-threaded
+             application. Typical usage is python3 -X importtime -c 'import asyncio'
+         -X dev: enable CPython's "development mode", introducing additional runtime
+             checks which are too expensive to be enabled by default. Effect of the
+             developer mode:
+                * Add default warning filter, as -W default
+                * Install debug hooks on memory allocators: see the PyMem_SetupDebugHooks()
+                  C function
+                * Enable the faulthandler module to dump the Python traceback on a crash
+                * Enable asyncio debug mode
+                * Set the dev_mode attribute of sys.flags to True
+                * io.IOBase destructor logs close() exceptions
+         -X utf8: enable UTF-8 mode for operating system interfaces, overriding the default
+             locale-aware mode. -X utf8=0 explicitly disables UTF-8 mode (even when it would
+             otherwise activate automatically)
+         -X pycache_prefix=PATH: enable writing .pyc files to a parallel tree rooted at the
+             given directory instead of to the code tree
+         -X warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'
+         -X int_max_str_digits=number: limit the size of int<->str conversions.
+             This helps avoid denial of service attacks when parsing untrusted data.
+             The default is sys.int_info.default_max_str_digits.  0 disables.
+
+--check-hash-based-pycs always|default|never:
+    control how Python invalidates hash-based .pyc files
+file   : program read from script file
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+Other environment variables:
+PYTHONSTARTUP: file executed on interactive startup (no default)
+PYTHONPATH   : ';'-separated list of directories prefixed to the
+               default module search path.  The result is sys.path.
+PYTHONHOME   : alternate <prefix> directory (or <prefix>;<exec_prefix>).
+               The default module search path uses <prefix>\python{major}{minor}.
+PYTHONPLATLIBDIR : override sys.platlibdir.
+PYTHONCASEOK : ignore case in 'import' statements (Windows).
+PYTHONUTF8: if set to 1, enable the UTF-8 mode.
+PYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.
+PYTHONFAULTHANDLER: dump the Python traceback on fatal errors.
+PYTHONHASHSEED: if this variable is set to 'random', a random value is used
+   to seed the hashes of str and bytes objects.  It can also be set to an
+   integer in the range [0,4294967295] to get hash values with a
+   predictable seed.
+PYTHONINTMAXSTRDIGITS: limits the maximum digit characters in an int value
+   when converting from a string and when converting an int back to a str.
+   A value of 0 disables the limit.  Conversions to or from bases 2, 4, 8,
+   16, and 32 are never limited.
+PYTHONMALLOC: set the Python memory allocators and/or install debug hooks
+   on Python memory allocators. Use PYTHONMALLOC=debug to install debug
+   hooks.
+PYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale
+   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of
+   locale coercion and locale compatibility warnings on stderr.
+PYTHONBREAKPOINT: if this variable is set to 0, it disables the default
+   debugger. It can be set to the callable of your debugger of choice.
+PYTHONDEVMODE: enable the development mode.
+PYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.
+PYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.
+
+C:\test>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=1
+>>> print(a)
+1
+>>> a = "me"
+>>> print(a)
+me
+>>> a=1
+>>> b=10
+>>> print(a+b)
+11
+>>> print(a**b)
+1
+>>> a="bit"
+>>> a=q
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'q' is not defined
+>>> a=1
+>>> b=10
+>>> print(b/2)
+5.0
+>>> print(b**5)
+100000
+>>> print(b/3)
+3.3333333333333335
+>>> print(b//3)
+3
+>>> print(b%3)
+1
+>>> coffee=2500
+>>> myMoney=100000
+>>> person=11
+>>> print(coffee*person)
+27500
+>>> print(myMoney//coffee*person)
+440
+>>> print(myMoney//(coffee*person))
+3
+>>> print(myMoney%(coffee*person))
+17500
+>>> print(myMoney%(coffee*person)//coffee)
+7
+>>> a="hello world"
+>>> print(a)
+hello world
+>>> print(a+a)
+hello worldhello world
+>>> a="hello world!"
+>>> print(a+a)
+hello world!hello world!
+>>> b='hello world'
+>>> b='hello world!'
+>>> print(a+b)
+hello world!hello world!
+>>> print('hi, my name is "park"')
+hi, my name is "park"
+>>> print("hi, my name is 'park'")
+hi, my name is 'park'
+>>> print('lee')
+lee
+>>> c="""hi,
+... my name is
+... "park"
+... """
+>>> print(c)
+hi,
+my name is
+"park"
+
+>>> c='''hi
+... my name is
+... "park"
+... """
+... '''
+>>> print(c)
+hi
+my name is
+"park"
+"""
+
+>>> print(a)
+hello world!
+>>> print(a+c)
+hello world!hi
+my name is
+"park"
+"""
+
+>>> print(a+c)
+hello world!hi
+my name is
+"park"
+"""
+
+>>> d=a+c
+>>> print(a+c)
+hello world!hi
+my name is
+"park"
+"""
+
+>>> print(a+"\n)+c)
+  File "<stdin>", line 1
+    print(a+"\n)+c)
+            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print(a+\n+c)
+  File "<stdin>", line 1
+    print(a+\n+c)
+             ^
+SyntaxError: unexpected character after line continuation character
+>>> print(a+"\n"+c)
+hello world!
+hi
+my name is
+"park"
+"""
+
+>>> d=a+"\n"+c
+>>> print(d
+... d
+  File "<stdin>", line 1
+    print(d
+          ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(d)
+hello world!
+hi
+my name is
+"park"
+"""
+
+>>> print(a+"\t"+c)
+hello world!    hi
+my name is
+"park"
+"""
+
+>>> print("\\")
+\
+>>> print(a+"\b")
+hello world!
+>>> print(a*3)
+hello world!hello world!hello world!
+>>> print(a-a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> print(a/a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+>>> print(a)
+hello world!
+>>> print(a[7])
+o
+>>> print(a[6])
+w
+>>> print(a[11])
+!
+>>> print(a[0]+a[4]+a[2]+a[10])
+hold
+>>> print(a[0]+a[1]+a[2]+a[3])
+hell
+>>> print(a[0:4]
+... )
+hell
+>>> print(a[0:4])
+hell
+>>> print(a[:4])
+hell
+>>> print(a[2:4])
+ll
+>>> print(a[4:4])
+
+>>> print(a)
+hello world!
+>>> print(a[10:])
+d!
+>>> print(a[1:])
+ello world!
+>>> print(a[:])
+hello world!
+>>> print(a[0:])
+hello world!
+>>> print(488-315)
+173
+>>> print(173*2)
+346
+>>> exit()
+
+C:\test>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> a="hello world!"
+>>> print(a)
+hello world!
+>>> print("hi "+a)
+hi hello world!
+>>> print("hi %s"%a)
+hi hello world!
+>>> print("hi %s%s"%(a,a))
+hi hello world!hello world!
+>>>
+>>> print("hi\n%s\n%s" %(a,a))
+hi
+hello world!
+hello world!
+>>> b=10
+>>> print("hi\n%s\n%s" %(a,b))
+hi
+hello world!
+10
+>>> print("hi\n%s\n%s" %(a,b+1))
+hi
+hello world!
+11
+>>> print("hi\n%s\n%d" %(a,b+1))
+hi
+hello world!
+11
+>>> print("hi\n%s\n%f" %(a,b+1))
+hi
+hello world!
+11.000000
+>>> print("hi\n%s\n%f" %(a,b/3))
+hi
+hello world!
+3.333333
+>>> print("hi\n%s\n%d" %(a,b/3))
+hi
+hello world!
+3
+>>> print("hi\n%s\n%d%c" %(a,b/3.a[0]))
+  File "<stdin>", line 1
+    print("hi\n%s\n%d%c" %(a,b/3.a[0]))
+                                ^
+SyntaxError: invalid decimal literal
+>>> print("hi\n%s\n%d%c" %(a,b/3,a[0]))
+hi
+hello world!
+3h
+>>> print("hi\n%s\n%d\n%c" %(a,b/3,a[0]))
+hi
+hello world!
+3
+h
+>>> name="park"
+>>> print("my name is %s" %name)
+my name is park
+>>> name=kim
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'kim' is not defined
+>>> name="kim"
+>>> print("my name is %s" %name)
+my name is kim
+>>> print(f"my name is {name}")
+my name is kim
+>>>
+>>> print(f"my name is {4+5}")
+my name is 9
+>>> print("my name is %s" %name*3)
+my name is kimmy name is kimmy name is kim
+>>> print("my name is %s" %(name*3))
+my name is kimkimkim
+>>> print(f"my name is {10/3}")
+my name is 3.3333333333333335
+>>> print(f"my name is {10/3}")
+my name is 3.3333333333333335
+>>> print("me %f" %(10/3))
+me 3.333333
+>>> print("me %2.2f"%1000000/3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> print("me %2.2f"%(1000000/3))
+me 333333.33
+>>> print("me %10.2f"%(1000000/3))
+me  333333.33
+>>> print("me %10.2f"%(100/3))
+me      33.33
+>>> print("me %10.8f"%(100/3))
+me 33.33333333
+>>> print("me %100.8f"%(100/3))
+me                                                                                          33.33333333
+>>> print("me %15.8f"%(100/3))
+me     33.33333333
+>>> a.replace("hello", "hi")
+'hi world!'
+>>> a.replace("l","q"
+... )
+'heqqo worqd!'
+>>> print(a)
+hello world!
+>>> a.split()
+['hello', 'world!']
+>>> a.split("w")
+['hello ', 'orld!']
+>>>
+>>> a.split("l")
+['he', '', 'o wor', 'd!']
+>>> print("name : yoon"\n"age : 35")
+  File "<stdin>", line 1
+    print("name : yoon"\n"age : 35")
+                        ^
+SyntaxError: unexpected character after line continuation character
+>>> print("name : yoon"\w"age : 35")
+  File "<stdin>", line 1
+    print("name : yoon"\w"age : 35")
+                        ^
+SyntaxError: unexpected character after line continuation character
+>>> print("name : yoon"\n"age : 35")
+  File "<stdin>", line 1
+    print("name : yoon"\n"age : 35")
+                        ^
+SyntaxError: unexpected character after line continuation character
+>>> print("name : yoon" \n "age : 35")
+  File "<stdin>", line 1
+    print("name : yoon" \n "age : 35")
+                         ^
+SyntaxError: unexpected character after line continuation character
+>>> a="name : yoon"
+>>> b="age : 35"
+>>> print(a+\n+b)
+  File "<stdin>", line 1
+    print(a+\n+b)
+             ^
+SyntaxError: unexpected character after line continuation character
+>>> print(a\nb)
+  File "<stdin>", line 1
+    print(a\nb)
+            ^
+SyntaxError: unexpected character after line continuation character
+>>> print(a)
+name : yoon
+>>> print(b)
+age : 35
+>>> print(a+b)
+name : yoonage : 35
+>>> print(a\nb)
+  File "<stdin>", line 1
+    print(a\nb)
+            ^
+SyntaxError: unexpected character after line continuation character
+>>>
+>>> print("a\nb"
+... )
+a
+b
+>>> print(a)
+name : yoon
+>>> print("a+b")
+a+b
+>>> print(a+"\n"+b)
+name : yoon
+age : 35
+>>> print(a+b)
+name : yoonage : 35
+>>> print(a+"\n"+b)
+name : yoon
+age : 35
+>>> name="yoon"
+>>> age="35"
+>>>
+>>> a="name : yoon"
+>>> b=age : 35
+  File "<stdin>", line 1
+    b=age : 35
+          ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> a="name : yoon"
+>>> b="age : 20"
+>>> print(a+"\n"+b)
+name : yoon
+age : 20
+>>> b="age : 35"
+>>> print(a+"\n"+b)
+name : yoon
+age : 35
+>>> name="yoon"
+>>> age=35
+>>> print("name : %s\nage : %s"%(name,age))
+name : yoon
+age : 35
+>>> print("%s\n%s" %(a,b))
+name : yoon
+age : 35
+>>> name=kim
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'kim' is not defined
+>>> name="kim"
+>>> age=11
+>>> print("name : %s\nage : %s"%(name,age))
+name : kim
+age : 11
+>>> name="alfredo"
+>>> age=55
+>>> print("name : %s\nage : %s"%(name,age))
+name : alfredo
+age : 55
+>>> name="kim"
+>>> age=20
+>>> print("name :"+"\n"+"age : ")
+name :
+age :
+>>> print("name : %s\nage : %s"%(name,age))
+name : kim
+age : 20
+>>> person={'name': "kim", age:20}
+>>> print(person['name'])
+kim
+>>> print(person['age'])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'age'
+>>> print(person[20])
+20
+>>> person={'name': "kim", 'age':20}
+>>> print(person['age'])
+20
+>>> print(person['name'])
+kim
+>>> print(person)
+{'name': 'kim', 'age': 20}
+>>> print(person['name'])
+kim
+>>> person["name"]="park"
+>>> print(person)
+{'name': 'park', 'age': 20}
+>>> print("name : person["name"] \n age : person["age"]"0
+  File "<stdin>", line 1
+    print("name : person["name"] \n age : person["age"]"0
+          ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("name : person['name']" \n "age :person['age'])
+  File "<stdin>", line 1
+    print("name : person['name']" \n "age :person['age'])
+                                   ^
+SyntaxError: unexpected character after line continuation character
+>>> print("name : %s\nage : %s"%(person['name'], person['age']))
+name : park
+age : 20
+>>> print("name : %s\nage : %s"%(person["name"], person["age"]))
+name : park
+age : 20
+>>> print(person.get("name")
+... )
+park
+>>>
+>>> print(person.keys())
+dict_keys(['name', 'age'])
+>>> print(person,values())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'values' is not defined
+>>> print(person.values())
+dict_values(['park', 20])
+>>> person1={'name': "park", 'age':30}
+>>> print(person)
+{'name': 'park', 'age': 20}
+>>> print(person1)
+{'name': 'park', 'age': 30}
+>>> print("name : %s\nage : %s"%(person1["name"], person1["age"]))
+name : park
+age : 30
+>>> person1={'name' : "kim", 'age':20}
+>>> list=[1,2,3,4]
+>>> print(list[1])
+2
+>>> print(lisy[0:4]
+... )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lisy' is not defined. Did you mean: 'list'?
+>>> print(list[0:4]
+... )
+[1, 2, 3, 4]
+>>> print(list[:4])
+[1, 2, 3, 4]
+>>> print(list[1:])
+[2, 3, 4]
+>>> persons=[person, person1]
+>>> print(persons[0])
+{'name': 'park', 'age': 20}
+>>> print(persons[1])
+{'name': 'kim', 'age': 20}
+>>> print(persons[2])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> person2={'name:"lee",'age':10}
+  File "<stdin>", line 1
+    person2={'name:"lee",'age':10}
+                             ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> person2={'name':"lee",'age':10}
+>>> persons.append(person2)
+>>> print(person)
+{'name': 'park', 'age': 20}
+>>> print(persons)
+[{'name': 'park', 'age': 20}, {'name': 'kim', 'age': 20}, {'name': 'lee', 'age': 10}]
+>>> print(person1['age'])
+20
+>>> person{'name': "park", 'age': 30)
+  File "<stdin>", line 1
+    person{'name': "park", 'age': 30)
+                                    ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'
+>>> person{'name': "park", 'age': 30}
+  File "<stdin>", line 1
+    person{'name': "park", 'age': 30}
+          ^
+SyntaxError: invalid syntax
+>>> print(person1['age'])
+20
+>>> ppp={20:20}
+>>> list=[ppp]
+>>> print(list[0][20])
+20
+>>> list1=[1,2,3,4,5,6,8]
+>>> list2=[list1]
+>>> print(list2)
+[[1, 2, 3, 4, 5, 6, 8]]
+>>> list2.append([2222])
+>>> print(list2)
+[[1, 2, 3, 4, 5, 6, 8], [2222]]
+>>> prinr(list[0].get(20
+... ))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'prinr' is not defined. Did you mean: 'print'?
+>>> print(list[0].get(20))
+20
+>>> print(person.get('age'))
+20
+>>> print(list[0].get(20))
+20
+>>> print(list[0].get(1)
+...
+... )
+None
+>>> print(list[0][99]))
+  File "<stdin>", line 1
+    print(list[0][99]))
+                      ^
+SyntaxError: unmatched ')'
+>>> print(list[0][99])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 99
+>>> print(list[0].get(99))
+None
+>>> persons
+[{'name': 'park', 'age': 20}, {'name': 'kim', 'age': 20}, {'name': 'lee', 'age': 10}]
+>>> del person[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 2
+>>> del persons[2]
+>>> persons
+[{'name': 'park', 'age': 20}, {'name': 'kim', 'age': 20}]
+>>> persons[1]['name']="lee"
+>>> persons
+[{'name': 'park', 'age': 20}, {'name': 'lee', 'age': 20}]
+>>> person[0]['age']=30
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> persons[0]['age']=30
+>>> person
+{'name': 'park', 'age': 30}
+>>> list=[1,4,5,6,8,7,618,79,64,,5,2,45,8]
+  File "<stdin>", line 1
+    list=[1,4,5,6,8,7,618,79,64,,5,2,45,8]
+                                ^
+SyntaxError: invalid syntax
+>>> list = [1,4,5,6,8,7,618,79,64,,5,2,45,8]
+  File "<stdin>", line 1
+    list = [1,4,5,6,8,7,618,79,64,,5,2,45,8]
+                                  ^
+SyntaxError: invalid syntax
+>>> list = [1,4,5,6,8,7,618,79,64,4,5,2,45,8]
+>>> list.remove(4)
+>>> list
+[1, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45, 8]
+>>> list.pop()
+8
+>>> list
+[1, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45]
+>>> list.append(10)
+>>> list
+[1, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45, 10]
+>>> list.insert(1,100)
+>>> list
+[1, 100, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45, 10]
+>>> len(list)
+14
+>>> list.insert(14,555)
+>>> list
+[1, 100, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45, 10, 555]
+>>> print(list[len(list)-1])
+555
+>>> del list[len(list)-1]
+>>> print(list[len(list)-1])
+10
+>>> list
+[1, 100, 5, 6, 8, 7, 618, 79, 64, 4, 5, 2, 45, 10]
+>>> list1=[1,2,3]
+>>> len(list1)
+3
+>>> list[len(list1)]
+6
+>>> list1[len(list1)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> list1[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> list1[2]
+3
+>>> list1[len(list1)-1]
+3
+>>> len(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'int' has no len()
+>>> len(list1(1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object is not callable
+>>> len(list)
+14
+>>> len(list1)
+3
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> tmp=[1,2,3]
+>>> tmp1=tmp
+>>> tmp[1]=3
+>>> tmp
+[1, 3, 3]
+>>> tmp1
+[1, 3, 3]
+>>> tmpd={"name":"kim", "age":20}
+>>> tmp=[tmpd]
+>>> tmp
+[{'name': 'kim', 'age': 20}]
+>>> tmpd["name"]="lee"
+>>> tmp
+[{'name': 'lee', 'age': 20}]
+>>> tmp1
+[1, 3, 3]
+>>> tmp
+[{'name': 'lee', 'age': 20}]
+>>> tmpd['name']='park'
+>>> tmp.append(tmpd)
+>>> tmp
+[{'name': 'park', 'age': 20}, {'name': 'park', 'age': 20}]
+>>> tmp=[]
+>>> tmp.append(tmpd)
+>>> tmp
+[{'name': 'park', 'age': 20}]
+>>> tmpd['name']='lee'
+>>> tmp.append(tmpd)
+>>> tmp
+[{'name': 'lee', 'age': 20}, {'name': 'lee', 'age': 20}]
+>>> tmp1=tmp.copy()
+>>> tmp
+[{'name': 'lee', 'age': 20}, {'name': 'lee', 'age': 20}]
+>>> tmp1
+[{'name': 'lee', 'age': 20}, {'name': 'lee', 'age': 20}]
+>>> tmpd['name']="son"
+>>> tmp
+[{'name': 'son', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> tmp1
+[{'name': 'son', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> list=[1,2,3]
+>>> list1=list.copy()
+>>> list
+[1, 2, 3]
+>>> list1
+[1, 2, 3]
+>>> list[1]=3
+>>> list
+[1, 3, 3]
+>>> list1
+[1, 2, 3]
+>>> tmp.append(tmpd.copy))
+  File "<stdin>", line 1
+    tmp.append(tmpd.copy))
+                         ^
+SyntaxError: unmatched ')'
+>>> tmp.append(tmpd.copy())
+>>> tmp
+[{'name': 'son', 'age': 20}, {'name': 'son', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> tmp1
+[{'name': 'son', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> tmpd['name']='lee'
+>>> tmp1
+[{'name': 'lee', 'age': 20}, {'name': 'lee', 'age': 20}]
+>>> tmp
+[{'name': 'lee', 'age': 20}, {'name': 'lee', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> id(tmp)
+2420897755584
+>>> id(tmp1)
+2420897755200
+>>> id(tmp[0])
+2420897752256
+>>> id(tmp1[0])
+2420897752256
+>>> id(tmpd)
+2420897752256
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> id(list)
+2420897754432
+>>> list1=list
+>>> list[0]=2
+>>> list
+[2, 3, 3]
+>>> list1
+[2, 3, 3]
+>>> id(;ist1)
+  File "<stdin>", line 1
+    id(;ist1)
+       ^
+SyntaxError: invalid syntax
+>>> id(list1)
+2420897754432
+>>> id(tmpa)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tmpa' is not defined. Did you mean: 'tmp'?
+>>> id(tmpd)
+2420897752256
+>>> list=[tmpd]
+>>> list1=list.copy()
+>>> id(list)
+2420897273536
+>>> id(list1)
+2420897752384
+>>> id(list1[0])
+2420897752256
+>>> id(list[0])
+2420897752256
+>>> tmpd['name']='t'
+>>> tmp
+[{'name': 't', 'age': 20}, {'name': 't', 'age': 20}, {'name': 'son', 'age': 20}]
+>>> list
+[{'name': 't', 'age': 20}]
+>>> list1
+[{'name': 't', 'age': 20}]
+>>> list1.append(tmpd.copy())
+>>> list1
+[{'name': 't', 'age': 20}, {'name': 't', 'age': 20}]
+>>> list
+[{'name': 't', 'age': 20}]
+>>> tmpd['name']="p"
+>>> list
+[{'name': 'p', 'age': 20}]
+>>> list1
+[{'name': 'p', 'age': 20}, {'name': 't', 'age': 20}]
+>>> list2=list[:]
+>>> list2
+[{'name': 'p', 'age': 20}]
+>>> id(list)
+2420897273536
+>>> id(list2)
+2420897754432
+>>> list2
+[{'name': 'p', 'age': 20}]
+>>> list
+[{'name': 'p', 'age': 20}]
+>>> id(list[0])
+2420897752256
+>>> id(list2[0])
+2420897752256
+>>> tmpd={'name':'re', 'age':100}
+>>> list.append(tmpd)
+>>> list
+[{'name': 'p', 'age': 20}, {'name': 're', 'age': 100}]
+>>> list1
+[{'name': 'p', 'age': 20}, {'name': 't', 'age': 20}]
+>>>
+>>> tmpa={'name':'op','age':30}
+>>> tmpd={'name':'op','age':30}
+>>> list.append(tmpd)
+>>> list
+[{'name': 'p', 'age': 20}, {'name': 're', 'age': 100}, {'name': 'op', 'age': 30}]
+>>> tmpd={'name':'op', 'age':40}
+>>> list.append(tmpd)
+>>> list
+[{'name': 'p', 'age': 20}, {'name': 're', 'age': 100}, {'name': 'op', 'age': 30}, {'name': 'op', 'age': 40}]
+>>> tmp=(1,2,3,4,5)
+>>> tmp
+(1, 2, 3, 4, 5)
+>>> tmp.append(6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> del tmp[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+>>> days=['월','화ㅏ']
+>>> days
+['월', '화ㅏ']
+>>> list=[1,2,3,4,5,6,1,2,7,67,6,7,645,100,84]
+>>> list
+[1, 2, 3, 4, 5, 6, 1, 2, 7, 67, 6, 7, 645, 100, 84]
+>>> tmpset=set(list)
+>>> tmpset
+{1, 2, 3, 4, 5, 6, 7, 67, 645, 100, 84}
+>>> tmpset.add(1000)
+>>> tmpset
+{1, 2, 3, 4, 5, 6, 7, 67, 645, 100, 1000, 84}
+>>> tmpset.update([6,7,87])
+>>> tmpset
+{1, 2, 3, 4, 5, 6, 7, 67, 645, 100, 1000, 84, 87}
+>>> tmpset.remove(67)
+>>> tmpset
+{1, 2, 3, 4, 5, 6, 7, 645, 100, 1000, 84, 87}
+>>> 1=0
+  File "<stdin>", line 1
+    1=0
+    ^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> 1>2
+False
+>>> 1>1
+False
+>>> 1>=1
+True
+>>> x=10
+>>> x>5
+True
+>>> x==11
+False
+>>> x==10
+True
+>>> x!=5
+True
+>>> u={1,2,3,4,5}
+>>> y={3,4,5,6,7}
+>>> u+y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+>>> u-y
+{1, 2}
+>>> y-u
+{6, 7}
+>>> u l y
+  File "<stdin>", line 1
+    u l y
+      ^
+SyntaxError: invalid syntax
+>>> u | y
+{1, 2, 3, 4, 5, 6, 7}
+>>> u&y
+{3, 4, 5}
+>>> u
+{1, 2, 3, 4, 5}
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+C:\test>python test1.py
+sssss
+nnnnn
+
+C:\test>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
