@@ -5,5 +5,5 @@ def solution(n):
     for el in range (0, len(answer)):
         answer[el] = int(answer[el])
     return answer
-print(solution(123))
+print(solution(12345))
 
