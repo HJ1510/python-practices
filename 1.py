@@ -6,4 +6,5 @@ def solution(n):
         answer[el] = int(answer[el])
     return answer
 print(solution(12345))
-
+print(solution(123))
+print(solution(1234))
